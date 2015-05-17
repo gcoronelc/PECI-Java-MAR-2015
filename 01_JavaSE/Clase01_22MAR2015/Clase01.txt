@@ -1,0 +1,12 @@
+Convertir texto en entero
+================================
+
+int n = Integer.parseInt("23");
+
+Convertir texto a double
+================================
+
+double n = Double.parseDouble("345.67");
+
+
+

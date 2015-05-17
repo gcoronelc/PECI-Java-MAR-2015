@@ -1,0 +1,6 @@
+{"nombre":"CLAUDIA","nota1":15,"nota2":16,"nota3":14,"nota4":10,"prom":15}
+{"nombre":"SANDRA","nota1":11,"nota2":18,"nota3":14,"nota4":15,"prom":16}
+{"nombre":"MARLENE","nota1":11,"nota2":12,"nota3":10,"nota4":11,"prom":11}
+{"nombre":"MARTHA","nota1":12,"nota2":16,"nota3":16,"nota4":18,"prom":16}
+{"nombre":"JOSE","nota1":14,"nota2":10,"nota3":20,"nota4":15,"prom":16}
+{"nombre":"SOFIA","nota1":16,"nota2":17,"nota3":18,"nota4":19,"prom":18}

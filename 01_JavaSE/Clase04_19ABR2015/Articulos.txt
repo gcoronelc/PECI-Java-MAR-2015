@@ -1,0 +1,3 @@
+{"nombre":"Televisor","precio":1299.99}
+{"nombre":"Equipo Sonido","precio":1500.0}
+{"nombre":"Juego de Sala 3-2-1","precio":2500.0}

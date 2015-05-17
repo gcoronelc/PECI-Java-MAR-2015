@@ -1,0 +1,49 @@
+Variable de tipo primitiva
+ - double, float, int, short, char, boolean
+ - Double, Float, Integer, Short, Character, Boolean
+ - Un dato simple
+
+Una variable tipo String
+ - Se puede considerar un dato simple
+
+Colecciones de Datos
+ - Datos simples u objetos
+ - Arreglos
+   - Una dimensión: Vectores
+   - Dos dimensiones: Matrices
+   - Tres o mas dimensiones
+ - Colecciones
+   - Listas (List)
+   - Map (Map)
+   - Conjuntos (Set)
+   - Streams (Java 8)
+
+
+EJERCICIO RETO
+==============
+Generar un arreglo de 20 elementos
+con datos numericos entre 50 y 100;
+Luego encontrar el mayor, el menor,
+el promedio y la mediana.
+
+
+EJERCICIO RETO 2
+================
+Modificar el reto 1, tal que la 
+cantidad de elementos sea un valor
+aleatorio entre 20 y 50.
+
+
+
+
+
+
+   
+   
+   
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,18 @@
+EJERCICIO 01
+============
+
+Desarrollar una aplicación que permite registrar
+en un archivo, utilizando el formato JSON, a los
+estudiantes de Java de ISIL.
+
+Son 4 notas, se elimina la de menor puntaje.
+
+También debe permitir consultar:
+
+  - Todos los estudiantes
+  - Solo los aprobados (PROM >= 14)
+  - Solo los desaprobados
+  
+  
+  
+  

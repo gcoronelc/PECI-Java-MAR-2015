@@ -1,0 +1,40 @@
+Ejercicio 1
+===========
+
+Desarrollar un programa para
+calcular el impuesto y total
+de una venta.
+
+Los datos de entrada son:
+
+- Precio del producto.
+- La cantidad vendida.
+
+
+Ejercicio 2
+===========
+
+Desarrollar un programa para
+encontrar el promedio de un
+estudiante de Java, las notas
+son:
+
+  - promedio de practicas (40%)
+  - examen parcial (20%)
+  - examen final (40%)
+
+Aprueba si el promedio es mayor o
+igual a 14.0.
+
+
+
+Ejercicio 3
+============
+
+Desarrollar un programa para encontrar
+el mayor de 3 numeros.
+
+
+
+
+
