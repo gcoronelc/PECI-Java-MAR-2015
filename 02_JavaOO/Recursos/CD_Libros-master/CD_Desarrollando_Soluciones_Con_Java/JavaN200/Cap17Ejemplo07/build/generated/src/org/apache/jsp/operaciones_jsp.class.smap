@@ -1,0 +1,21 @@
+SMAP
+operaciones_jsp.java
+JSP
+*S JSP
+*F
++ 0 operaciones.jsp
+operaciones.jsp
+*L
+1,3:45
+3:47,10
+4:57,2
+5,12:59
+17:71,3
+18,3:74
+21:77,3
+22,3:80
+25:83,3
+26,3:86
+29:89,3
+30,6:92
+*E

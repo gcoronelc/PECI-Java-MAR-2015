@@ -1,0 +1,49 @@
+<!-- 
+	Document   : registrarItem
+	Created on : 04/01/2009, 11:53:57 AM
+	Author     : gustavo
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	</head>
+	<body>
+		<h1>Registro de Ventas</h1>
+		<table width="300">
+			<tr>
+				<td width="149"><a href="NuevaVenta">Nueva Venta</a></td>
+				<td width="139"><a href="ListarCanasta">Ver Canasta</a></td>
+			</tr>
+		</table>
+		<h3>Registrar Item</h3>
+		<form name="form1" method="post" action="AgregarItem">
+			<table width="307">
+				<tr>
+					<td width="92">Artículo</td>
+					<td width="203">
+						<input name="articulo" type="text" id="articulo" size="25" maxlength="25">
+					</td>
+				</tr>
+				<tr>
+					<td>Precio</td>
+					<td>
+						<input name="precio" type="text" id="precio" size="10" maxlength="10">
+					</td>
+				</tr>
+				<tr>
+					<td>Cantidad</td>
+					<td>
+						<input name="cantidad" type="text" id="cantidad" size="10" maxlength="10">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" name="procesar" id="procesar" value="Procesar">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

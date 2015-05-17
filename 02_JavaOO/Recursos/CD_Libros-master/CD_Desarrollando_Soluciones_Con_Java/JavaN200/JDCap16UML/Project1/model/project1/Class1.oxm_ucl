@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<?Oracle-JDeveloper Artifact = '1.1'?>
+<artifact xmlns="http://xmlns.oracle.com/jdeveloper/modeler/artifact" name="Class1" type="UMLClass" cid="8ef7cc66-011e-1000-802b-c0a8012201ce::project1.Class1::UMLClass">
+   <property xmlns="">
+      <cid name="NAMESPACE_REFERENCE" key="8ef2f1e8-011e-1000-8004-c0a8012201ce::project1::UMLPackage"/>
+      <null name="COMMENT"/>
+      <null name="IMAGE"/>
+      <text name="IS_ABSTRACT">FALSE</text>
+      <text name="IS_LEAF">FALSE</text>
+      <text name="IS_ROOT">TRUE</text>
+      <text name="COMPLETE_LIBRARY">FALSE</text>
+      <text name="VISIBILITY">PUBLIC</text>
+      <text name="IS_ACTIVE">FALSE</text>
+   </property>
+   <backreference xmlns=""/>
+   <children xmlns=""/>
+</artifact>

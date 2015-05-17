@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMI xmlns:UML="omg.org/UML/1.4" xmi.version="2.0">
+   <XMI.header>
+      <XMI.metamodel xmi.name="UML" xmi.version="1.4"/>
+		<XMI.documentation>
+			<XMI.exporter>
+				Embarcadero's Describe
+			</XMI.exporter>
+			<XMI.exporterVersion>
+				6.0
+			</XMI.exporterVersion>
+		</XMI.documentation>
+   </XMI.header>
+
+   <XMI.content>
+   <UML:Profile xmi.id="DCE.4FE2F1AA-0E42-04DF-4A47-2C019379F519" name="Unnamed" isCloned="true" href=".\UMLProject1.etup#//*[@xmi.id=&apos;DCE.4FE2F1AA-0E42-04DF-4A47-2C019379F519&apos;]" isDirty="false"><UML:Element.ownedElement>
+<UML:Stereotype xmi.id="DCE.60BBAA2E-7D5C-F5BF-FD92-2EEA5A90294F" name="*" owner="__uri_.\UMLProject1.etup#//*[@xmi.id=&apos;DCE.4FE2F1AA-0E42-04DF-4A47-2C019379F519&apos;]"/>
+<UML:Stereotype xmi.id="DCE.83E1DF07-0BF5-42CB-9CE6-C06EA5F55E1B" name="interface" owner="__uri_.\UMLProject1.etup#//*[@xmi.id=&apos;DCE.4FE2F1AA-0E42-04DF-4A47-2C019379F519&apos;]"/>
+<UML:Stereotype xmi.id="DCE.45D47575-3ECC-2D28-573E-62FC55CB4FE3" name="boundary" owner="__uri_.\UMLProject1.etup#//*[@xmi.id=&apos;DCE.4FE2F1AA-0E42-04DF-4A47-2C019379F519&apos;]"/>
+<UML:Stereotype xmi.id="DCE.E6CB3A9F-57CA-3B55-0B44-ED9EB775E915" name="controller" owner="__uri_.\UMLProject1.etup#//*[@xmi.id=&apos;DCE.4FE2F1AA-0E42-04DF-4A47-2C019379F519&apos;]"/>
+<UML:Stereotype xmi.id="DCE.67B5E2A3-ACFA-BDC8-1737-C25374B44C1C" name="entity" owner="__uri_.\UMLProject1.etup#//*[@xmi.id=&apos;DCE.4FE2F1AA-0E42-04DF-4A47-2C019379F519&apos;]"/></UML:Element.ownedElement></UML:Profile></XMI.content>
+</XMI>

@@ -1,0 +1,23 @@
+DELIMITER $$
+
+DROP PROCEDURE IF EXISTS `MyRaiseError`$$
+
+CREATE PROCEDURE MyRaiseError(msg VARCHAR(62))
+BEGIN
+	DECLARE Tmsg VARCHAR(80);
+	SET Tmsg = msg;
+
+	IF (CHAR_LENGTH(TRIM(Tmsg)) = 0 OR Tmsg IS NULL) THEN
+		SET Tmsg = 'ERROR GENERADO';
+	END IF;
+
+	SET Tmsg = CONCAT('@@MyError', Tmsg, '@@MyError');
+
+	SET @MyError = CONCAT('INSERT INTO', Tmsg);
+	PREPARE stmt FROM @MyError;
+	EXECUTE stmt;
+	DEALLOCATE PREPARE stmt;
+
+END$$
+
+DELIMITER ; 
