@@ -1,0 +1,15 @@
+CASTING DE TIPOS PRIMITIVOS
+===================================================
+
+UPCASTING        DOWNCASTING
+---------        --------------
+
+byte n1 = 50;    int n1 = 50;          int n1 = 5550;
+int n2 = n2;     byte n2 = (byte)n1;   byte n2 = (byte) n1;
+
+
+
+
+
+
+
