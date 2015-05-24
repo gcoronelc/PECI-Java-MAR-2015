@@ -1,0 +1,24 @@
+<html><body><pre>
+&lt;html>
+&lt;!--
+  Copyright (c) 1999 The Apache Software Foundation.  All rights 
+  reserved.
+-->
+
+&lt;% 
+   double freeMem = Runtime.getRuntime().freeMemory();
+   double totlMem = Runtime.getRuntime().totalMemory();
+   double percent = freeMem/totlMem;
+   if (percent &lt; 0.5) { 
+%>
+
+&lt;jsp:forward page="/forward/one.jsp"/>
+
+&lt;% } else { %>
+
+&lt;jsp:forward page="two.html"/>
+
+&lt;% } %>
+
+&lt;/html>
+</pre></body></html>

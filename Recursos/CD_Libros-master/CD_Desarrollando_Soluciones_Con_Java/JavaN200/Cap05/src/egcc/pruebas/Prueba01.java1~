@@ -1,0 +1,16 @@
+package egcc.pruebas;
+
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.D1218AEA-C4CE-F31A-AFE0-A44023798004]
+// </editor-fold> 
+public class Prueba01 {
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.BDE203B0-7FFF-ED61-9D6D-3A32F7805223]
+    // </editor-fold> 
+    public static void main (String[] args) {
+    }
+
+}
+
