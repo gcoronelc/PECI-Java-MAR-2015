@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/EGCC/PJD/03_JDBC/Clase02_07JUN2015/AprendiendoJDBC/src/pe/egcc/app/dao/mapper/ClienteMapper.xml</file>
+            <file>file:/C:/EGCC/PJD/03_JDBC/Clase02_07JUN2015/AprendiendoJDBC/src/mybatis-config.xml</file>
+            <file>file:/C:/EGCC/PJD/03_JDBC/Clase02_07JUN2015/AprendiendoJDBC/src/pe/egcc/app/dao/MyBatisConnectionFactory.java</file>
+            <file>file:/C:/EGCC/PJD/03_JDBC/Clase02_07JUN2015/AprendiendoJDBC/src/pe/egcc/app/dao/mapper/EmpleadoMapper.xml</file>
+            <file>file:/C:/EGCC/PJD/03_JDBC/Clase02_07JUN2015/AprendiendoJDBC/src/pe/egcc/app/dao/espec/EmpleadoMapper.java</file>
+            <file>file:/C:/EGCC/PJD/03_JDBC/Clase02_07JUN2015/AprendiendoJDBC/src/pe/egcc/app/dao/espec/ClienteMapper.java</file>
+            <file>file:/C:/EGCC/PJD/03_JDBC/Clase02_07JUN2015/AprendiendoJDBC/src/pe/egcc/app/prueba/Prueba09.java</file>
+            <file>file:/C:/EGCC/PJD/03_JDBC/Clase02_07JUN2015/AprendiendoJDBC/src/configuracion.properties</file>
+        </group>
+    </open-files>
+</project-private>
