@@ -3,7 +3,7 @@ create or replace procedure usp_egcc_retiro
 p_empleado varchar2, p_clave varchar2)
 as
   v_msg varchar2(1000);
-	v_saldo number(12,2);
+  v_saldo number(12,2);
 	v_moneda char(2);
 	v_cont number(5,0);
 	v_estado varchar2(15);
@@ -14,9 +14,10 @@ begin
 	select 
     dec_cuensaldo, chr_monecodigo, int_cuencontmov, 
     vch_cuenestado, chr_cuenclave
-		into v_saldo, v_moneda, v_cont, v_estado, v_clave
-		from cuenta
-		where chr_cuencodigo = p_cuenta;
+	into v_saldo, v_moneda, v_cont, v_estado, v_clave
+	from cuenta
+	where chr_cuencodigo = p_cuenta
+  for update;
 	if v_estado != 'ACTIVO' then
 		raise_application_error(-20001,'Cuenta no esta activa.');
 	end if;
