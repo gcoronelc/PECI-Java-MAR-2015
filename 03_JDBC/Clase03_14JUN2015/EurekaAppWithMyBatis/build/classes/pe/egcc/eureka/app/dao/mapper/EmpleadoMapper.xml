@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="pe.egcc.eureka.app.dao.espec.EmpleadoMapper">
+
+  <select id="getEmpleadoPorUsuario" 
+          resultType="EmpleadoBean">
+			select 
+			chr_emplcodigo    codigo,
+			vch_emplpaterno   paterno,
+			vch_emplmaterno   materno,
+			vch_emplnombre    nombre,
+			vch_emplciudad    ciudad,
+			vch_empldireccion direccion,
+			vch_emplusuario   usuario
+			from empleado
+			where vch_emplusuario = #{usuario}
+			and vch_emplclave = #{clave}
+      and chr_emplcodigo in (
+          select chr_emplcodigo 
+          from asignado 
+          where dtt_asigfechabaja is null)
+  </select>
+  
+</mapper>

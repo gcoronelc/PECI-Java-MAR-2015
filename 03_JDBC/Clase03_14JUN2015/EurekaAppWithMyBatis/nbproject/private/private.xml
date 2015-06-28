@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/EGCC/PJD/03_JDBC/Clase03_14JUN2015/EurekaAppWithMyBatis/src/pe/egcc/eureka/app/ClasePrincipal.java</file>
+            <file>file:/C:/EGCC/PJD/03_JDBC/Clase03_14JUN2015/EurekaAppWithMyBatis/src/pe/egcc/eureka/app/view/ClienteConsultas.java</file>
+            <file>file:/C:/EGCC/PJD/03_JDBC/Clase03_14JUN2015/EurekaAppWithMyBatis/src/pe/egcc/eureka/app/dao/mapper/EmpleadoMapper.xml</file>
+            <file>file:/C:/EGCC/PJD/03_JDBC/Clase03_14JUN2015/EurekaAppWithMyBatis/src/pe/egcc/eureka/app/util/MyMessage.java</file>
+            <file>file:/C:/EGCC/PJD/03_JDBC/Clase03_14JUN2015/EurekaAppWithMyBatis/src/pe/egcc/eureka/app/util/Session.java</file>
+            <file>file:/C:/EGCC/PJD/03_JDBC/Clase03_14JUN2015/EurekaAppWithMyBatis/src/pe/egcc/eureka/app/controller/LogonController.java</file>
+            <file>file:/C:/EGCC/PJD/03_JDBC/Clase03_14JUN2015/EurekaAppWithMyBatis/src/pe/egcc/eureka/app/view/LogonView.java</file>
+            <file>file:/C:/EGCC/PJD/03_JDBC/Clase03_14JUN2015/EurekaAppWithMyBatis/src/pe/egcc/eureka/app/view/PanelCriterioClientes.java</file>
+            <file>file:/C:/EGCC/PJD/03_JDBC/Clase03_14JUN2015/EurekaAppWithMyBatis/src/pe/egcc/eureka/app/controller/ClienteController.java</file>
+            <file>file:/C:/EGCC/PJD/03_JDBC/Clase03_14JUN2015/EurekaAppWithMyBatis/src/pe/egcc/eureka/app/view/MainView.java</file>
+        </group>
+    </open-files>
+</project-private>
