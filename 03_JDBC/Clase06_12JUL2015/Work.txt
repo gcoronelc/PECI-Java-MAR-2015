@@ -1,0 +1,98 @@
+GENERAR EL CODIGO DEL CLIENTE
+=============================
+
+1.- Leer el contador de la tabla CONTADOR
+
+SQL> select * from contador;
+
+vch_conttabla                  INT_CONTITEM INT_CONTLONGITUD
+------------------------------ ------------ ----------------
+Cliente                                  20                5
+
+select 
+  int_contitem contador, 
+  int_contlongitud longitud
+from contador
+where vch_conttabla = 'cliente'
+
+update contador
+set int_contitem = 444
+where vch_conttabla = 'cliente'
+
+
+INSERTAR CLIENTE
+----------------
+
+insert into cliente(chr_cliecodigo,vch_cliepaterno,
+vch_cliematerno,vch_clienombre,chr_cliedni,
+vch_clieciudad,vch_cliedireccion,vch_clietelefono,
+vch_clieemail) values(#{codigo},#{paterno},
+#{materno},#{nombre},#{dni},#{ciudad},#{direccion},
+#{telefono},#{email})
+
+
+EJERCICIO 1
+==========================================
+Desarrollar la opción eliminar.
+
+Mensajes de error:
+
+- No se puede eliminar por que tiene cuentas asociadas.
+
+
+ELIMINAR CLIENTE
+========================
+
+1.- Se necesita un SELECT para saber si tiene cuentas.
+
+select count(*) cuentas
+from cuenta
+where chr_cliecodigo = #{codigo}
+
+
+2.- Se necesita un DELETE para eliminar el cliente.
+
+delete cliente
+where chr_cliecodigo = #{codigo}
+
+
+EJERCICIO 02
+---------------------------------------
+Consultar los movimientos de una cuenta 
+según modelo.
+
+
+MOVIMIENTO:
+-------------
+CHR_CUENCODIGO
+INT_MOVINUMERO
+DTT_MOVIFECHA
+CHR_EMPLCODIGO
+CHR_TIPOCODIGO
+DEC_MOVIIMPORTE
+CHR_CUENREFERENCIA
+
+TIPOMOVIMIENTO
+----------------------
+CHR_TIPOCODIGO
+VCH_TIPODESCRIPCION
+VCH_TIPOACCION
+VCH_TIPOESTADO
+
+select 
+  m.chr_cuencodigo cuenta,
+  m.int_movinumero nromov,
+  m.dtt_movifecha fecha,
+  m.chr_emplcodigo empleado,
+  t.vch_tipodescripcion tipo,
+  t.vch_tipoaccion accion,
+  m.dec_moviimporte importe
+from movimiento m
+join tipomovimiento t
+on m.chr_tipocodigo = t.chr_tipocodigo
+where m.chr_cuencodigo = #{cuenta}
+
+
+
+
+

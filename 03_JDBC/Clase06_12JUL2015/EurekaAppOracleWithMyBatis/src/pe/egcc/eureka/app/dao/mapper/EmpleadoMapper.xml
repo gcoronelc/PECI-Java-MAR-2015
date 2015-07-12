@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="pe.egcc.eureka.app.dao.espec.EmpleadoMapper">
+
+  
+	<!-- criterio de busqueda general de empleados -->
+	
+	<sql id="criterioGeneralEmpleados">
+		<where>
+			<if test="codigo != ''">
+				AND CHR_EMPLCODIGO = #{codigo}
+			</if>
+			<if test="paterno != ''">
+				AND VCH_EMPLPATERNO LIKE #{paterno} || '%'
+			</if>
+			<if test="materno != ''">
+				AND VCH_EMPLMATERNO LIKE #{materno} || '%'
+			</if>
+			<if test="nombre != ''">
+        AND VCH_EMPLNOMBRE LIKE #{nombre} || '%'
+      </if>
+			<if test="ciudad != ''">
+        AND VCH_EMPLCIUDAD LIKE '%' || #{ciudad} || '%'
+      </if>
+      <if test="direccion != ''">
+        AND VCH_EMPLDIRECCION LIKE '%' || #{direccion} || '%'
+      </if>
+      <if test="usuario != ''">
+        AND VCH_EMPLUSUARIO LIKE '%' || #{usuario} || '%'
+      </if>
+		</where>
+	</sql>
+  
+  
+  <!-- Consulta de empleado por usuario -->
+  
+  <select id="getEmpleadoPorUsuario" 
+          resultType="EmpleadoBean">
+			select 
+			chr_emplcodigo    codigo,
+			vch_emplpaterno   paterno,
+			vch_emplmaterno   materno,
+			vch_emplnombre    nombre,
+			vch_emplciudad    ciudad,
+			vch_empldireccion direccion,
+			vch_emplusuario   usuario
+			from empleado
+			where vch_emplusuario = #{usuario}
+			and vch_emplclave = #{clave}
+      and chr_emplcodigo in (
+          select chr_emplcodigo 
+          from asignado 
+          where dtt_asigfechabaja is null)
+  </select>
+  
+  <!-- Consulta de empleados -->
+  
+  <select id="getEmpleados" 
+          parameterType="EmpleadoBean" 
+          resultType="EmpleadoBean">
+			select 
+			chr_emplcodigo    codigo,
+			vch_emplpaterno   paterno,
+			vch_emplmaterno   materno,
+			vch_emplnombre    nombre,
+			vch_emplciudad    ciudad,
+			vch_empldireccion direccion,
+			vch_emplusuario   usuario
+			from empleado
+      <include refid="criterioGeneralEmpleados"/>
+  </select>
+  
+</mapper>
