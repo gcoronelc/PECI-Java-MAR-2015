@@ -1,0 +1,57 @@
+@CHARSET "ISO-8859-1";
+
+.menu_item {
+	width: 80px;
+	height: 30px;
+	background-color: #086A87;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 3px;
+	margin: 3px;
+	vertical-align: middle;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.boton {
+	background-color: #585858;
+	color: #FFFFFF;
+	height: 30px;
+}
+
+.boton_procesar {
+	background-color: #3104B4;
+	color: #FFFFFF;
+	height: 30px;
+}
+
+
+.mensaje {
+  background-color: #E6E6E6;
+  color: #084B8A;
+  margin: 10px;
+  padding: 10px;
+}
+
+.error {
+  background-color: #F6D8CE;
+  color: #8A2908;
+  margin: 10px;
+  padding: 10px;
+}
+
+.rowH {
+	background-color: #424242;
+  color: #EFFBFB;
+}
+
+.rowB1 {
+  background-color: #F5FBEF;
+  color: #424242;
+}
+
+.rowB2 {
+  background-color: #FBEFF8;
+  color: #424242;
+}
+
