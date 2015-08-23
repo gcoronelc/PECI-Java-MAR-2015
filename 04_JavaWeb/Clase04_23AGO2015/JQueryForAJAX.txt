@@ -1,0 +1,16 @@
+
+$("#id").load("pagina");
+
+$.post("pagina",parametros,function(respuesta){
+
+});
+
+$.get("pagina",parametros,function(respuesta){
+
+});
+
+$.ajax(
+
+
+
+);
