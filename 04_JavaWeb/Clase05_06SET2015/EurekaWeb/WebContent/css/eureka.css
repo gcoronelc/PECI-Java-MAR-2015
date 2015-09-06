@@ -1,0 +1,101 @@
+@CHARSET "ISO-8859-1";
+
+._PAGE {
+	width: 800px;
+	margin: 10px auto;
+	padding: 10px;
+	background-color: #088A85;
+	color: white;
+}
+
+._HEADER {
+  width: 780px;
+  margin: 5px;
+  padding: 5px;
+  background-color: white;
+  color: #424242;
+}
+
+._MENU {
+	width: 780px;
+	margin: 5px;
+	padding: 5px;
+	background-color: #D8D8D8;
+	color: #424242;
+}
+
+._CONTENT {
+	width: 780px;
+	margin: 5px;
+	padding: 5px;
+	background-color: #FAFAFA;
+	color: #585858;
+}
+
+._FOOTER {
+	width: 780px;
+	margin: 5px;
+	padding: 5px;
+	text-align: center;
+	background-color: #424242;
+	color: white;
+}
+
+body {
+	background-color: #0B615E;
+	color: white;
+}
+
+.boton {
+	background-color: #585858;
+	color: #FFFFFF;
+	height: 30px;
+}
+
+.boton_procesar {
+	background-color: #B43104;
+	color: #FFFFFF;
+	height: 40px;
+}
+
+.link_procesar {
+  background-color: #B43104;
+  color: #FFFFFF;
+  height: 40px;
+  text-decoration: none;
+}
+
+h1 {
+	color: #084B8A;
+	border-bottom: thick solid #ff0000;
+	font-size: 18px;
+}
+
+.mensaje {
+	background-color: #E6E6E6;
+	color: #084B8A;
+	margin: 10px;
+	padding: 10px;
+}
+
+.error {
+	background-color: #F6D8CE;
+	color: #8A2908;
+	margin: 10px;
+	padding: 10px;
+}
+
+.rowH {
+	background-color: #424242;
+	color: #EFFBFB;
+}
+
+.rowB1 {
+	background-color: #F5FBEF;
+	color: #424242;
+}
+
+.rowB2 {
+	background-color: #FBEFF8;
+	color: #424242;
+}
