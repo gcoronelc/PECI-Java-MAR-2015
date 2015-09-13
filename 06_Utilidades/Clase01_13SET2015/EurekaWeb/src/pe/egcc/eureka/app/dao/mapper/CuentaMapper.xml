@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="pe.egcc.eureka.app.dao.espec.CuentaMapper">
+
+	<insert id="registrarRetiro"  statementType="CALLABLE">
+	   {CALL usp_egcc_retiro(#{cuenta},#{importe},#{empleado},#{clave})}
+	</insert>
+
+  <select id="getMovimientos" parameterType="string" resultType="map" >
+    select 
+      m.chr_cuencodigo cuenta,
+      m.int_movinumero nromov,
+      m.dtt_movifecha fecha,
+      m.chr_emplcodigo empleado,
+      t.vch_tipodescripcion tipo,
+      t.vch_tipoaccion accion,
+      m.dec_moviimporte importe
+    from movimiento m
+    join tipomovimiento t
+    on m.chr_tipocodigo = t.chr_tipocodigo
+    where m.chr_cuencodigo = #{cuenta}
+    order by m.int_movinumero
+  </select>
+  
+</mapper>
