@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="pe.egcc.eureka.app.dao.espec.ContadorMapper">
+
+	<!-- Leer datos del contador -->
+  
+	<select id="leerDatos" parameterType="string" resultType="ContadorBean">
+    select 
+      vch_conttabla tabla,
+      int_contitem contador, 
+      int_contlongitud longitud
+    from contador
+    where vch_conttabla = #{tabla}
+    for update
+	</select>
+	
+
+  <!-- Actualizar contador -->
+  
+  <update id="actualizarDatos" parameterType="ContadorBean">
+    update contador
+    set int_contitem = #{contador}
+    where vch_conttabla = #{tabla}
+  </update>
+  
+</mapper>
