@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="repoClientes01" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4ce0f47d-f19e-46dc-b14b-b20797ca685a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+CHR_CLIECODIGO codigo,
+VCH_CLIEPATERNO || ' ' || VCH_CLIEMATERNO || ', ' || VCH_CLIENOMBRE nombre,
+CHR_CLIEDNI dni,
+VCH_CLIECIUDAD ciudad,
+VCH_CLIEDIRECCION direccion,
+VCH_CLIETELEFONO telefono,
+VCH_CLIEEMAIL email
+FROM CLIENTE]]>
+	</queryString>
+	<field name="CODIGO" class="java.lang.String"/>
+	<field name="NOMBRE" class="java.lang.String"/>
+	<field name="DNI" class="java.lang.String"/>
+	<field name="CIUDAD" class="java.lang.String"/>
+	<field name="DIRECCION" class="java.lang.String"/>
+	<field name="TELEFONO" class="java.lang.String"/>
+	<field name="EMAIL" class="java.lang.String"/>
+	<variable name="CANT_CLIENTES" class="java.lang.Integer" calculation="Count">
+		<variableExpression><![CDATA[$F{CODIGO}]]></variableExpression>
+		<initialValueExpression><![CDATA[0]]></initialValueExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="184" height="35" uuid="dd3e41da-9a69-4397-9e64-ce61014d1d5c"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EUREKA BANK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="35" width="184" height="20" uuid="214dd585-03b4-493f-9a4b-ddfa6a646f84"/>
+				<text><![CDATA[Ven que quiero tu plata.]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="43" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="36" uuid="755e3ff4-3391-430c-b359-23ca9691ced5"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LISTADO DE CLIENTES]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="89" height="20" uuid="872d4df4-c94a-4d94-80a4-d6578953dd1a"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[CODIGO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="89" y="0" width="281" height="20" uuid="18d1a709-9d94-45a8-897e-16ea1928cbb5"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOMBRE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="0" width="185" height="20" uuid="44e0fe23-14eb-406c-922f-c45b7f79c2f8"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[EMAIL]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="25" width="554" height="1" uuid="74b2f1d4-e4a7-4c74-99b6-919ee342906d"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="89" height="20" uuid="3c7c0449-2d5d-4b96-8615-119bc9275424"/>
+				<textFieldExpression><![CDATA[$F{CODIGO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="89" y="0" width="281" height="20" uuid="7655fb6f-f5d0-4d87-bb1b-4d2c19f57230"/>
+				<textFieldExpression><![CDATA[$F{NOMBRE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="0" width="185" height="20" uuid="9bfe6e4e-174f-46c5-af54-5377eafcd3b4"/>
+				<textFieldExpression><![CDATA[$F{EMAIL}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="109" splitType="Stretch">
+			<line>
+				<reportElement x="1" y="7" width="554" height="1" uuid="d7409a4d-cc7a-4226-b2ee-b4042eb95cc6"/>
+			</line>
+			<textField>
+				<reportElement x="4" y="15" width="333" height="20" uuid="f8491dd1-c65b-407b-8473-0ab28b285ef6"/>
+				<textFieldExpression><![CDATA["Son " + $V{CANT_CLIENTES} + " clientes."]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>
